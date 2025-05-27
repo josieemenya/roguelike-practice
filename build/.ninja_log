@@ -1,0 +1,7 @@
+# ninja log v6
+3	39	7700906685482667	C:/Users/jossi/Documents/project based learnig/StephUlC++/troll/build/CMakeFiles/cmake.verify_globs	fc6bcfb926c0ecfa
+40	594	7700906685853028	CMakeFiles/troll.dir/src/main.cpp.obj	cef35cbdb05f72d
+596	2774	7700906691418108	bin/troll.exe	cc1e44b3f7756d4
+4	26	7700907202309722	C:/Users/jossi/Documents/project based learnig/StephUlC++/troll/build/CMakeFiles/cmake.verify_globs	fc6bcfb926c0ecfa
+31	529	7700907202587715	CMakeFiles/troll.dir/src/main.cpp.obj	cef35cbdb05f72d
+530	2654	7700907207570287	bin/troll.exe	cc1e44b3f7756d4
