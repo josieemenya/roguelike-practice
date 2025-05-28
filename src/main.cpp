@@ -9,7 +9,7 @@
 
 int main(){
 
-  TCODConsole::initRoot(80, 50, "Title", false); // works but is crashing.
+  TCODConsole::initRoot(80, 50, "bitch tv", false); // works but is crashing.
 
 
   system("pause");
