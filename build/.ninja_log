@@ -1,15 +1,4 @@
 # ninja log v6
-3	39	7700906685482667	C:/Users/jossi/Documents/project based learnig/StephUlC++/troll/build/CMakeFiles/cmake.verify_globs	fc6bcfb926c0ecfa
-40	594	7700906685853028	CMakeFiles/troll.dir/src/main.cpp.obj	cef35cbdb05f72d
-596	2774	7700906691418108	bin/troll.exe	cc1e44b3f7756d4
-4	26	7700907202309722	C:/Users/jossi/Documents/project based learnig/StephUlC++/troll/build/CMakeFiles/cmake.verify_globs	fc6bcfb926c0ecfa
-31	529	7700907202587715	CMakeFiles/troll.dir/src/main.cpp.obj	cef35cbdb05f72d
-530	2654	7700907207570287	bin/troll.exe	cc1e44b3f7756d4
-77	105	7700930734363822	C:/Users/jossi/Documents/project based learnig/StephUlC++/troll/build/CMakeFiles/cmake.verify_globs	fc6bcfb926c0ecfa
-117	9545	7700930734771791	CMakeFiles/troll.dir/src/main.cpp.obj	cef35cbdb05f72d
-9546	12876	7700930829067685	bin/troll.exe	cc1e44b3f7756d4
-6	30	7700932204357934	C:/Users/jossi/Documents/project based learnig/StephUlC++/troll/build/CMakeFiles/cmake.verify_globs	fc6bcfb926c0ecfa
-4	25	7700932377565413	C:/Users/jossi/Documents/project based learnig/StephUlC++/troll/build/CMakeFiles/cmake.verify_globs	fc6bcfb926c0ecfa
-28	548	7700932377807952	CMakeFiles/troll.dir/src/main.cpp.obj	cef35cbdb05f72d
-549	2296	7700932383018042	bin/troll.exe	cc1e44b3f7756d4
-4	28	7700933981817052	C:/Users/jossi/Documents/project based learnig/StephUlC++/troll/build/CMakeFiles/cmake.verify_globs	fc6bcfb926c0ecfa
+31	58	7701690251648895	C:/Users/jossi/Documents/project based learnig/StephUlC++/troll/build/CMakeFiles/cmake.verify_globs	fc6bcfb926c0ecfa
+58	663	7701690251874536	CMakeFiles/troll.dir/src/main.cpp.obj	4dbe874a2770ed32
+4	26	7701690529426541	C:/Users/jossi/Documents/project based learnig/StephUlC++/troll/build/CMakeFiles/cmake.verify_globs	fc6bcfb926c0ecfa

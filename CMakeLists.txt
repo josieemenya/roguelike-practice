@@ -22,6 +22,8 @@ set(CMAKE_WIN32_EXECUTABLE OFF)
 
 add_executable(${PROJECT_NAME} ${SOURCE_FILES})
 
+include_directories(${CMAKE_SOURCE_DIR}/src/Includes)
+
 if(MINGW)
     target_link_options(${PROJECT_NAME} PRIVATE "-Wl,--subsystem,console")
 endif()
@@ -53,10 +55,16 @@ if (EMSCRIPTEN)
 endif()
 
 find_package(SDL3 CONFIG REQUIRED)
-find_package(libtcod CONFIG REQUIRED)
+find_library(LIBTCOD_LIBRARY libtcod PATHS "${VCPKG_ROOT}/installed/x64-mingw-static/lib" REQUIRED)
+include_directories("${VCPKG_ROOT}/installed/x64-mingw-static/include")
+
+target_compile_definitions(troll PRIVATE LIBTCOD_STATIC)
+
 target_link_libraries(
         ${PROJECT_NAME}
         PRIVATE
+        ${SDL3_MAIN_LIB}
         SDL3::SDL3
-        libtcod::libtcod
+        ${LIBTCOD_LIBRARY}
+
 )

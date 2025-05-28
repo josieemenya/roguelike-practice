@@ -5,6 +5,7 @@
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/Users/jossi/Documents/project based learnig/StephUlC++/troll/src/*.cpp")
 set(OLD_GLOB
   "C:/Users/jossi/Documents/project based learnig/StephUlC++/troll/src/main.cpp"
+  "C:/Users/jossi/Documents/project based learnig/StephUlC++/troll/src/source/Engine.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
