@@ -106,7 +106,7 @@ namespace Center{
     }
 
     void Engine::isKeyDownEvent(const SDL_Event& event) {
-       switch(event.key.keycode) {
+       switch(event.key.keysym.sym) {
          case SDLK_UP:
            next_event = Event::MoveUp;
            break;
