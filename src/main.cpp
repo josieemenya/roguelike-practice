@@ -1,7 +1,8 @@
 //
 // Created by jossi on 27/05/2025.
 //
-#include "libtcod.hpp"
+#define TCODLIB_STATIC
+#include <libtcod/console.hpp>
 
 #define SDL_MAIN_HANDLED
 

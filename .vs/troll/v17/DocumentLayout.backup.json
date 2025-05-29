@@ -1,0 +1,151 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\jossi\\Documents\\project based learnig\\StephUlC\u002B\u002B\\troll\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jossi\\Documents\\project based learnig\\StephUlC\u002B\u002B\\troll\\src\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jossi\\Documents\\project based learnig\\StephUlC\u002B\u002B\\troll\\CMakeLists.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CMakeLists.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jossi\\Documents\\project based learnig\\StephUlC\u002B\u002B\\troll\\CMakeSettings.json||{10608CD5-279C-4A28-BD5F-BA2CFCE06219}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CMakeSettings.json||{10608CD5-279C-4A28-BD5F-BA2CFCE06219}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jossi\\Documents\\project based learnig\\StephUlC\u002B\u002B\\troll\\build.bat||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:build.bat||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jossi\\Documents\\project based learnig\\StephUlC\u002B\u002B\\troll\\src\\Actors.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Actors.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Windows\\vcpkg\\scripts\\buildsystems\\vcpkg.cmake||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.30\\Modules\\CMakeDetermineSystem.cmake||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|CMake Overview Pages||{B1CAA5B0-FEB1-4350-8AB9-F895876842F2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Actors.h",
+              "DocumentMoniker": "C:\\Users\\jossi\\Documents\\project based learnig\\StephUlC\u002B\u002B\\troll\\src\\Actors.h",
+              "RelativeDocumentMoniker": "src\\Actors.h",
+              "ToolTip": "C:\\Users\\jossi\\Documents\\project based learnig\\StephUlC\u002B\u002B\\troll\\src\\Actors.h",
+              "RelativeToolTip": "src\\Actors.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-29T12:27:39.756Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CMakeLists.txt",
+              "DocumentMoniker": "C:\\Users\\jossi\\Documents\\project based learnig\\StephUlC\u002B\u002B\\troll\\CMakeLists.txt",
+              "RelativeDocumentMoniker": "CMakeLists.txt",
+              "ToolTip": "C:\\Users\\jossi\\Documents\\project based learnig\\StephUlC\u002B\u002B\\troll\\CMakeLists.txt",
+              "RelativeToolTip": "CMakeLists.txt",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAiwCAAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-05-29T11:37:30.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CMakeSettings.json",
+              "DocumentMoniker": "C:\\Users\\jossi\\Documents\\project based learnig\\StephUlC\u002B\u002B\\troll\\CMakeSettings.json",
+              "RelativeDocumentMoniker": "CMakeSettings.json",
+              "ToolTip": "C:\\Users\\jossi\\Documents\\project based learnig\\StephUlC\u002B\u002B\\troll\\CMakeSettings.json",
+              "RelativeToolTip": "CMakeSettings.json",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-29T10:31:15.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "build.bat",
+              "DocumentMoniker": "C:\\Users\\jossi\\Documents\\project based learnig\\StephUlC\u002B\u002B\\troll\\build.bat",
+              "RelativeDocumentMoniker": "build.bat",
+              "ToolTip": "C:\\Users\\jossi\\Documents\\project based learnig\\StephUlC\u002B\u002B\\troll\\build.bat",
+              "RelativeToolTip": "build.bat",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAFAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH/SURBVEhL7dU/aBNhHMbxby5pgjo6WK1DaGOJ8Q8qFmxBWnGxaqk4OIriWBChKTEBFam0SkEdRByEDp3VRYqKDoJSMCpW0VoaTawWXJNo7tL7XV6XKvY1ryUYB8HPcvB7n/ee9ziOg79JKaWP/j2\u002BZGIgCyqsL9SHL2fV4\u002Bb7eg5UvYIK\u002B5KJuDo7OPRTvH7OnEph6UOdKx73Hj3lzsMnuCL68pKMBSWnzJuZHNPvZ3FsB8dxyGQ/8Tg9ydeSrceNjAWTUxkyH\u002BbI5D7iiiAivHo7w\u002BzcZ569nNLjRsaCWCSM5QMRj\u002B6uHXTvakcWijZFI3rcyFiglMK2HTwRlFIopRAR/BZUVEWPGxkLXk\u002B/Wzixy83xB9y4fR9PhJJtM5F\u002BoceNjAVbNrSyZtVKNkZbEHERzyW6rplYawudHW163MhYsGL5Mjrbt7M\u002B0ozfsghYFts2x\u002Bho28rV0TGGL13Rt1QV0Ae6YLCBw4d6Abg1fpeJ9HOKxSLiztPXn2B3104O9uzXt/1gfIJqQqEQhUKBc6kBhk\u002BnyOfzKO/3L7ymAm/exZ0vo1QFpSq45TKyxNddU0FFeTT4/RyPn6TvRJxgwM\u002BXYkGPLVJTQe/ePVy7PELT6kbWNjUyNnqdY0eP6LFFair4bmRokIsXzuvjqnzJRH8WfH/8T6hO5fTJf7/4Bn2yzOdgnYQEAAAAAElFTkSuQmCC",
+              "WhenOpened": "2025-05-29T10:29:22.565Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CMakeDetermineSystem.cmake",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.30\\Modules\\CMakeDetermineSystem.cmake",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.30\\Modules\\CMakeDetermineSystem.cmake",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.30\\Modules\\CMakeDetermineSystem.cmake",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.30\\Modules\\CMakeDetermineSystem.cmake",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-05-29T10:29:08.146Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\jossi\\Documents\\project based learnig\\StephUlC\u002B\u002B\\troll\\src\\main.cpp",
+              "RelativeDocumentMoniker": "src\\main.cpp",
+              "ToolTip": "C:\\Users\\jossi\\Documents\\project based learnig\\StephUlC\u002B\u002B\\troll\\src\\main.cpp",
+              "RelativeToolTip": "src\\main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-29T10:29:03.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "vcpkg.cmake",
+              "DocumentMoniker": "C:\\Windows\\vcpkg\\scripts\\buildsystems\\vcpkg.cmake",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Windows\\vcpkg\\scripts\\buildsystems\\vcpkg.cmake",
+              "ToolTip": "C:\\Windows\\vcpkg\\scripts\\buildsystems\\vcpkg.cmake",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Windows\\vcpkg\\scripts\\buildsystems\\vcpkg.cmake",
+              "ViewState": "AgIAAGcDAAAAAAAAAAAawHwDAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-05-29T10:28:34.869Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CMake Overview Pages",
+              "DocumentMoniker": "CMake Overview Pages",
+              "ToolTip": "CMake Overview Pages",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-05-29T10:27:43.8Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

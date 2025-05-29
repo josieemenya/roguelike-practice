@@ -1,32 +1,26 @@
-cmake_minimum_required (VERSION 3.19...4.0)
+cmake_minimum_required (VERSION 4.0)
 
+# Set the default toolchain to use a Vcpkg submodule.
 if(NOT DEFINED CMAKE_TOOLCHAIN_FILE)
-    set(CMAKE_TOOLCHAIN_FILE "C:/Windows/vcpkg/scripts/buildsystems/vcpkg.cmake" CACHE STRING "Vcpkg toolchain file")
-
+    set(CMAKE_TOOLCHAIN_FILE
+        "${CMAKE_CURRENT_SOURCE_DIR}/vcpkg/scripts/buildsystems/vcpkg.cmake"
+        CACHE STRING "Vcpkg toolchain file")
 endif()
 
 project(
-        troll  # Project name, change this as needed.
-        LANGUAGES C CXX
+    libtcod-getting-started  # Project name, change this as needed.
+    LANGUAGES C CXX
 )
 
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${PROJECT_BINARY_DIR}/bin")  # Keep all runtime files in one directory.
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${PROJECT_BINARY_DIR}/bin")  # Save all runtime files to this directory.
 
 file(
-        GLOB_RECURSE SOURCE_FILES
-        CONFIGURE_DEPENDS  # Automatically reconfigure if source files are added/removed.
-        ${PROJECT_SOURCE_DIR}/src/*.cpp
-        ${PROJECT_SOURCE_DIR}/src/*.hpp
+    GLOB_RECURSE SOURCE_FILES
+    CONFIGURE_DEPENDS  # Automatically reconfigure if source files are added/removed.
+    ${PROJECT_SOURCE_DIR}/src/*.cpp
+    ${PROJECT_SOURCE_DIR}/src/*.hpp
 )
-set(CMAKE_WIN32_EXECUTABLE OFF)
-
 add_executable(${PROJECT_NAME} ${SOURCE_FILES})
-
-include_directories(${CMAKE_SOURCE_DIR}/src/Includes)
-
-if(MINGW)
-    target_link_options(${PROJECT_NAME} PRIVATE "-Wl,--subsystem,console")
-endif()
 
 # Ensure the C++17 standard is available.
 target_compile_features(${PROJECT_NAME} PRIVATE cxx_std_17)
@@ -43,40 +37,8 @@ else()
     target_compile_options(${PROJECT_NAME} PRIVATE -Wall -Wextra)
 endif()
 
-if (EMSCRIPTEN)
-    # Attach data folder to Emscripten builds.
-    target_link_options(${PROJECT_NAME} PRIVATE --preload-file "${CMAKE_CURRENT_SOURCE_DIR}/data@data")
-    # Set output to html to generate preview pages, otherwise you'll have to make your own html.
-    set_target_properties(
-            ${PROJECT_NAME}
-            PROPERTIES
-            SUFFIX ".html"
-    )
-endif()
-
-add_library(lodepng STATIC src/thirdparty/lodepng/lodepng.cpp)
-target_include_directories(lodepng PUBLIC src/thirdparty/lodepng)
-
-
-
+set(SDL3_DIR "C:/vcpkg/installed/x64-windows-static/share/sdl3")
 
 find_package(SDL3 CONFIG REQUIRED)
-find_package(ZLIB REQUIRED)
-find_package(lodepng CONFIG REQUIRED)
-
-
-find_library(LIBTCOD_LIBRARY libtcod PATHS "${VCPKG_ROOT}/installed/x64-mingw-static/lib" REQUIRED)
-include_directories("${VCPKG_ROOT}/installed/x64-mingw-static/include")
-
-target_compile_definitions(troll PRIVATE LIBTCOD_STATIC)
-
-target_link_libraries(
-        ${PROJECT_NAME}
-        PRIVATE
-        ${SDL3_MAIN_LIB}
-        SDL3::SDL3
-        ${LIBTCOD_LIBRARY}
-        lodepng
-        ZLIB::ZLIB
-
-)
+find_package(libtcod CONFIG REQUIRED)
+target_link_libraries(${PROJECT_NAME} PRIVATE SDL3::SDL3 libtcod::libtcod)
