@@ -106,26 +106,34 @@ namespace Center{
     }
 
     void Engine::isKeyDownEvent(const SDL_Event& event) {
-       switch(event.key.keysym.sym) {
-         case SDLK_UP:
-           next_event = Event::MoveUp;
+       switch(event.key.scancode) {
+
+         case SDL_SCANCODE_UP:
+		 	      case SDL_SCANCODE_W:
+           		next_event = Event::MoveUp;
+           		break;
+
+         case SDL_SCANCODE_DOWN:
+			      case SDL_SCANCODE_S:
+            	next_event = Event::MoveDown;
+             	break;
+
+         case SDL_SCANCODE_LEFT:
+			      case SDL_SCANCODE_A:
+           		next_event = Event::MoveLeft;
+           		break;
+
+         case SDL_SCANCODE_RIGHT:
+			      case SDL_SCANCODE_D:
+           		next_event = Event::MoveRight;
            break;
 
-         case SDLK_DOWN:
-            next_event = Event::MoveDown;
-             break;
-
-         case SDLK_LEFT:
-           next_event = Event::MoveLeft;
-           break;
-
-         case SDLK_RIGHT:
-           next_event = Event::MoveRight;
-           break;
-
-         case SDLK_ESCAPE:
+         case SDL_SCANCODE_ESCAPE:
            next_event = Event::Quit;
            break;
+
+		 default:
+		 	break;
        }
     }
 

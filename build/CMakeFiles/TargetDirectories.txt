@@ -1,3 +1,0 @@
-C:/Users/jossi/Documents/project based learnig/StephUlC++/troll/build/CMakeFiles/troll.dir
-C:/Users/jossi/Documents/project based learnig/StephUlC++/troll/build/CMakeFiles/edit_cache.dir
-C:/Users/jossi/Documents/project based learnig/StephUlC++/troll/build/CMakeFiles/rebuild_cache.dir

@@ -54,7 +54,17 @@ if (EMSCRIPTEN)
     )
 endif()
 
+add_library(lodepng STATIC src/thirdparty/lodepng/lodepng.cpp)
+target_include_directories(lodepng PUBLIC src/thirdparty/lodepng)
+
+
+
+
 find_package(SDL3 CONFIG REQUIRED)
+find_package(ZLIB REQUIRED)
+find_package(lodepng CONFIG REQUIRED)
+
+
 find_library(LIBTCOD_LIBRARY libtcod PATHS "${VCPKG_ROOT}/installed/x64-mingw-static/lib" REQUIRED)
 include_directories("${VCPKG_ROOT}/installed/x64-mingw-static/include")
 
@@ -66,5 +76,7 @@ target_link_libraries(
         ${SDL3_MAIN_LIB}
         SDL3::SDL3
         ${LIBTCOD_LIBRARY}
+        lodepng
+        ZLIB::ZLIB
 
 )

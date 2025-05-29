@@ -4,7 +4,9 @@
 #include "libtcod.hpp"
 
 #define SDL_MAIN_HANDLED
+
 #include <SDL3/SDL_main.h>
+#include <SDL3/SDL.h>
 
 #include "Engine.h"
 
@@ -12,7 +14,7 @@
 //cmake -B build -S .
 // cmake --build build
 
-int main(int argc, char* argv[]){
+int SDL_main(int argc, char* argv[]){
     Center::Engine engine;
 
     while(engine.isRunning()){
