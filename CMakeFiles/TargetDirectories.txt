@@ -1,0 +1,3 @@
+C:/Users/jossi/Documents/project based learnig/StephUlC++/troll/CMakeFiles/libtcod-getting-started.dir
+C:/Users/jossi/Documents/project based learnig/StephUlC++/troll/CMakeFiles/edit_cache.dir
+C:/Users/jossi/Documents/project based learnig/StephUlC++/troll/CMakeFiles/rebuild_cache.dir

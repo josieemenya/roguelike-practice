@@ -22,7 +22,7 @@ CMAKE_AR:FILEPATH=C:/msys64/ucrt64/bin/ar.exe
 
 //Choose the type of build, options are: None Debug Release RelWithDebInfo
 // MinSizeRel ...
-CMAKE_BUILD_TYPE:STRING=Release
+CMAKE_BUILD_TYPE:STRING=
 
 //CXX compiler
 CMAKE_CXX_COMPILER:FILEPATH=C:/msys64/ucrt64/bin/c++.exe
@@ -113,7 +113,7 @@ CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=C:/Users/jossi/Documents/project based l
 CMAKE_GNUtoMS:BOOL=OFF
 
 //Install path prefix, prepended onto install directories.
-CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/troll
+CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/libtcod-getting-started
 
 //Path to a program.
 CMAKE_LINKER:FILEPATH=C:/msys64/ucrt64/bin/ld.exe
@@ -157,7 +157,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=troll
+CMAKE_PROJECT_NAME:STATIC=libtcod-getting-started
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=C:/msys64/ucrt64/bin/ranlib.exe
@@ -236,8 +236,8 @@ CMAKE_STRIP:FILEPATH=C:/msys64/ucrt64/bin/strip.exe
 //Path to a program.
 CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 
-//The CMake toolchain file
-CMAKE_TOOLCHAIN_FILE:FILEPATH=C:/Windows/vcpkg/scripts/buildsystems/vcpkg.cmake
+//No help, variable specified on the command line.
+CMAKE_TOOLCHAIN_FILE:UNINITIALIZED=C:/vcpkg/scripts/buildsystems/vcpkg.cmake
 
 //If this value is on, makefiles will be generated without the
 // .SILENT directive, and all commands will be echoed to the console
@@ -246,7 +246,7 @@ CMAKE_TOOLCHAIN_FILE:FILEPATH=C:/Windows/vcpkg/scripts/buildsystems/vcpkg.cmake
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //The directory containing a CMake configuration file for SDL3.
-SDL3_DIR:PATH=C:/Windows/vcpkg/installed/x64-mingw-static/share/sdl3
+SDL3_DIR:PATH=C:/vcpkg/installed/x64-mingw-static/share/sdl3
 
 //Automatically copy dependencies into the output directory for
 // executables.
@@ -254,7 +254,7 @@ VCPKG_APPLOCAL_DEPS:BOOL=ON
 
 //The directory which contains the installed libraries for each
 // triplet
-VCPKG_INSTALLED_DIR:PATH=C:/Windows/vcpkg/installed
+VCPKG_INSTALLED_DIR:PATH=C:/vcpkg/installed
 
 //The path to the vcpkg manifest directory.
 VCPKG_MANIFEST_DIR:PATH=
@@ -288,13 +288,13 @@ X_VCPKG_APPLOCAL_DEPS_INSTALL:BOOL=OFF
 X_VCPKG_APPLOCAL_DEPS_SERIALIZED:BOOL=OFF
 
 //Path to a file.
-ZLIB_INCLUDE_DIR:PATH=C:/Windows/vcpkg/installed/x64-mingw-static/include
+ZLIB_INCLUDE_DIR:PATH=C:/vcpkg/installed/x64-mingw-static/include
 
 //Path to a library.
-ZLIB_LIBRARY_DEBUG:FILEPATH=C:/Windows/vcpkg/installed/x64-mingw-static/debug/lib/libzlibd.a
+ZLIB_LIBRARY_DEBUG:FILEPATH=C:/vcpkg/installed/x64-mingw-static/debug/lib/libzlibd.a
 
 //Path to a library.
-ZLIB_LIBRARY_RELEASE:FILEPATH=C:/Windows/vcpkg/installed/x64-mingw-static/lib/libzlib.a
+ZLIB_LIBRARY_RELEASE:FILEPATH=C:/vcpkg/installed/x64-mingw-static/lib/libzlib.a
 
 //Path to a program.
 Z_VCPKG_BUILTIN_POWERSHELL_PATH:FILEPATH=C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe
@@ -304,25 +304,25 @@ Z_VCPKG_PWSH_PATH:FILEPATH=Z_VCPKG_PWSH_PATH-NOTFOUND
 
 //The directory which contains the installed libraries for each
 // triplet
-_VCPKG_INSTALLED_DIR:PATH=C:/Windows/vcpkg/installed
+_VCPKG_INSTALLED_DIR:PATH=C:/vcpkg/installed
+
+//Value Computed by CMake
+libtcod-getting-started_BINARY_DIR:STATIC=C:/Users/jossi/Documents/project based learnig/StephUlC++/troll/build
+
+//Value Computed by CMake
+libtcod-getting-started_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+libtcod-getting-started_SOURCE_DIR:STATIC=C:/Users/jossi/Documents/project based learnig/StephUlC++/troll
 
 //The directory containing a CMake configuration file for libtcod.
-libtcod_DIR:PATH=C:/Windows/vcpkg/installed/x64-mingw-static/share/libtcod
+libtcod_DIR:PATH=C:/vcpkg/installed/x64-mingw-static/share/libtcod
 
 //The directory containing a CMake configuration file for lodepng-c.
-lodepng-c_DIR:PATH=C:/Windows/vcpkg/installed/x64-mingw-static/share/lodepng-c
-
-//Value Computed by CMake
-troll_BINARY_DIR:STATIC=C:/Users/jossi/Documents/project based learnig/StephUlC++/troll/build
-
-//Value Computed by CMake
-troll_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-troll_SOURCE_DIR:STATIC=C:/Users/jossi/Documents/project based learnig/StephUlC++/troll
+lodepng-c_DIR:PATH=C:/vcpkg/installed/x64-mingw-static/share/lodepng-c
 
 //The directory containing a CMake configuration file for unofficial-utf8proc.
-unofficial-utf8proc_DIR:PATH=C:/Windows/vcpkg/installed/x64-mingw-static/share/unofficial-utf8proc
+unofficial-utf8proc_DIR:PATH=C:/vcpkg/installed/x64-mingw-static/share/unofficial-utf8proc
 
 //The directory containing a CMake configuration file for utf8proc.
 utf8proc_DIR:PATH=utf8proc_DIR-NOTFOUND
@@ -513,5 +513,5 @@ Z_VCPKG_CHECK_MANIFEST_MODE:INTERNAL=OFF
 //The path to the PowerShell implementation to use.
 Z_VCPKG_POWERSHELL_PATH:INTERNAL=C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe
 //Vcpkg root directory
-Z_VCPKG_ROOT_DIR:INTERNAL=C:/Windows/vcpkg
+Z_VCPKG_ROOT_DIR:INTERNAL=C:/vcpkg
 
