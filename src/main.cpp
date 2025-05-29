@@ -16,6 +16,9 @@
 // cmake --build build
 
 int SDL_main(int argc, char* argv[]){
+    (void)argc;
+    (void)argv;
+
     Center::Engine engine;
 
     while(engine.isRunning()){

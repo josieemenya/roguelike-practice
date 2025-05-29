@@ -48,9 +48,17 @@ build CMakeFiles/libtcod-getting-started.dir/src/main.cpp.obj: CXX_COMPILER__lib
   DEFINES = -DLIBTCOD_STATIC -DTCOD_NO_THREADS
   DEP_FILE = CMakeFiles\libtcod-getting-started.dir\src\main.cpp.obj.d
   FLAGS = -Wall -Wextra
-  INCLUDES = -isystem C:/vcpkg/installed/x64-mingw-static/include
+  INCLUDES = -I"C:/Users/jossi/Documents/project based learnig/StephUlC++/troll/src/Includes" -isystem C:/vcpkg/installed/x64-mingw-static/include
   OBJECT_DIR = CMakeFiles\libtcod-getting-started.dir
   OBJECT_FILE_DIR = CMakeFiles\libtcod-getting-started.dir\src
+
+build CMakeFiles/libtcod-getting-started.dir/src/source/Engine.cpp.obj: CXX_COMPILER__libtcod-getting-started_unscanned_ C$:/Users/jossi/Documents/project$ based$ learnig/StephUlC++/troll/src/source/Engine.cpp || cmake_object_order_depends_target_libtcod-getting-started
+  DEFINES = -DLIBTCOD_STATIC -DTCOD_NO_THREADS
+  DEP_FILE = CMakeFiles\libtcod-getting-started.dir\src\source\Engine.cpp.obj.d
+  FLAGS = -Wall -Wextra
+  INCLUDES = -I"C:/Users/jossi/Documents/project based learnig/StephUlC++/troll/src/Includes" -isystem C:/vcpkg/installed/x64-mingw-static/include
+  OBJECT_DIR = CMakeFiles\libtcod-getting-started.dir
+  OBJECT_FILE_DIR = CMakeFiles\libtcod-getting-started.dir\src\source
 
 
 # =============================================================================
@@ -60,7 +68,7 @@ build CMakeFiles/libtcod-getting-started.dir/src/main.cpp.obj: CXX_COMPILER__lib
 #############################################
 # Link the executable bin\libtcod-getting-started.exe
 
-build bin/libtcod-getting-started.exe: CXX_EXECUTABLE_LINKER__libtcod-getting-started_ CMakeFiles/libtcod-getting-started.dir/src/main.cpp.obj | C$:/vcpkg/installed/x64-mingw-static/debug/lib/libSDL3.a C$:/vcpkg/installed/x64-mingw-static/debug/lib/libtcod.a C$:/vcpkg/installed/x64-mingw-static/debug/lib/libSDL3.a C$:/vcpkg/installed/x64-mingw-static/lib/libzlib.a C$:/vcpkg/installed/x64-mingw-static/debug/lib/liblodepng-c.a C$:/vcpkg/installed/x64-mingw-static/debug/lib/libutf8proc.a
+build bin/libtcod-getting-started.exe: CXX_EXECUTABLE_LINKER__libtcod-getting-started_ CMakeFiles/libtcod-getting-started.dir/src/main.cpp.obj CMakeFiles/libtcod-getting-started.dir/src/source/Engine.cpp.obj | C$:/vcpkg/installed/x64-mingw-static/debug/lib/libSDL3.a C$:/vcpkg/installed/x64-mingw-static/debug/lib/libtcod.a C$:/vcpkg/installed/x64-mingw-static/debug/lib/libSDL3.a C$:/vcpkg/installed/x64-mingw-static/lib/libzlib.a C$:/vcpkg/installed/x64-mingw-static/debug/lib/liblodepng-c.a C$:/vcpkg/installed/x64-mingw-static/debug/lib/libutf8proc.a
   LINK_LIBRARIES = C:/vcpkg/installed/x64-mingw-static/debug/lib/libSDL3.a  C:/vcpkg/installed/x64-mingw-static/debug/lib/libtcod.a  C:/vcpkg/installed/x64-mingw-static/debug/lib/libSDL3.a  -lm  -lkernel32  -luser32  -lgdi32  -lwinmm  -limm32  -lole32  -loleaut32  -lversion  -luuid  -ladvapi32  -lsetupapi  -lshell32  -ldinput8  C:/vcpkg/installed/x64-mingw-static/lib/libzlib.a  C:/vcpkg/installed/x64-mingw-static/debug/lib/liblodepng-c.a  C:/vcpkg/installed/x64-mingw-static/debug/lib/libutf8proc.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\libtcod-getting-started.dir
   POST_BUILD = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\jossi\Documents\project based learnig\StephUlC++\troll\build" && C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary "C:/Users/jossi/Documents/project based learnig/StephUlC++/troll/build/bin/libtcod-getting-started.exe" -installedDir C:/vcpkg/installed/x64-mingw-static/bin -OutVariable out"
