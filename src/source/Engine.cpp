@@ -19,9 +19,13 @@
 #include <exception>
 #include <iostream>
 
+// auto tileset = tcod::load_tilesheet(get_data_dir() / "dejavu16x16_gs_tc.png", {32, 8}, tcod::CHARMAP_TCOD);
+   // params.tileset = tileset.get();
 
-auto path = std::filesystem::current_path() / "test.bmp";
+
+auto path = std::filesystem::current_path() / "test.png";
 tcod::Tileset PlayerSprite;
+TCOD_Tileset* PlayerSheet;
 
 constexpr size_t TILE_COUNT = 312;
 
@@ -45,6 +49,10 @@ namespace Center{
 
       engine_console = tcod::Console{ window_width, window_height };
       TCOD_ContextParams params {};
+
+      PlayerSprite = tcod::load_tilesheet(path, {24, 13}, full_charmap);
+      params.tileset = PlayerSprite.get();
+
 
       params.tcod_version = TCOD_COMPILEDVERSION;
       params.window_title = window_title.data();
@@ -85,13 +93,13 @@ namespace Center{
 
       if(std::filesystem::exists(path)) { // 16/16 pixels
         tcod::print(engine_console, {0, 0}, "exists", std::nullopt, std::nullopt, TCOD_LEFT, TCOD_BKGND_SET);
-        //auto PlayerSheet =  tcod::load_tilesheet((SpriteSheet / "test.bmp").string(), {24, 13}, full_charmap);
       } else {
         std::cerr << "Could not load test.bmp" << std::endl;
       }
 
-      engine_console.at(PlayerCharacter->PlayerLocation.x, PlayerCharacter->PlayerLocation.y).ch = 'x';
-      //engine_console.put_char(1, 1, PlayerSprite);
+      //engine_console.set_tilesheet(PlayerSprite);
+      engine_console.at(PlayerCharacter->PlayerLocation.x, PlayerCharacter->PlayerLocation.y).ch = full_charmap[2];
+
 
 
       engine_context.present(engine_console);
