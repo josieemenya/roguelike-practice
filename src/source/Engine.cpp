@@ -15,9 +15,25 @@
 #include <libtcod/version.h>
 #include <libtcod/context.hpp>
 #include <filesystem>
+#include <array>
+#include <exception>
+#include <iostream>
 
-std::filesystem::path SpriteSheet = "data";
+
+auto path = std::filesystem::current_path() / "test.bmp";
 tcod::Tileset PlayerSprite;
+
+constexpr size_t TILE_COUNT = 312;
+
+constexpr std::array<int, TILE_COUNT> make_full_charmap() {
+    std::array<int, TILE_COUNT> arr{};
+    for (size_t i = 0; i < TILE_COUNT; ++i) {
+        arr[i] = static_cast<int>(i);
+    }
+    return arr;
+}
+
+constexpr auto full_charmap = make_full_charmap();
 
 namespace Center{
 
@@ -67,11 +83,15 @@ namespace Center{
 
       engine_console.clear();
 
-      if(exists(SpriteSheet / "test.bmp" )) { // 16/16 pixels
+      if(std::filesystem::exists(path)) { // 16/16 pixels
         tcod::print(engine_console, {0, 0}, "exists", std::nullopt, std::nullopt, TCOD_LEFT, TCOD_BKGND_SET);
-        PlayerSprite = tcod::Tileset(16, 16);
+        //auto PlayerSheet =  tcod::load_tilesheet((SpriteSheet / "test.bmp").string(), {24, 13}, full_charmap);
+      } else {
+        std::cerr << "Could not load test.bmp" << std::endl;
       }
-      engine_console.at(PlayerCharacter->PlayerLocation.x, PlayerCharacter->PlayerLocation.y).ch = '@';
+
+      engine_console.at(PlayerCharacter->PlayerLocation.x, PlayerCharacter->PlayerLocation.y).ch = 'x';
+      //engine_console.put_char(1, 1, PlayerSprite);
 
 
       engine_context.present(engine_console);
