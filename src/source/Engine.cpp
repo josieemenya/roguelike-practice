@@ -14,8 +14,10 @@
 #include <libtcod/context.h>
 #include <libtcod/version.h>
 #include <libtcod/context.hpp>
+#include <filesystem>
 
-
+std::filesystem::path SpriteSheet = "data";
+tcod::Tileset PlayerSprite;
 
 namespace Center{
 
@@ -61,8 +63,16 @@ namespace Center{
     }
 
     void Engine::render(){
+
+
       engine_console.clear();
+
+      if(exists(SpriteSheet / "test.bmp" )) { // 16/16 pixels
+        tcod::print(engine_console, {0, 0}, "exists", std::nullopt, std::nullopt, TCOD_LEFT, TCOD_BKGND_SET);
+        PlayerSprite = tcod::Tileset(16, 16);
+      }
       engine_console.at(PlayerCharacter->PlayerLocation.x, PlayerCharacter->PlayerLocation.y).ch = '@';
+
 
       engine_context.present(engine_console);
     }

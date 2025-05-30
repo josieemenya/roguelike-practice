@@ -11,15 +11,18 @@
 
 #include "Engine.h"
 
+
 // to rebuild ue5 style use these cmds in project file cmd prompt :
 //cmake -B build -S .
 // cmake --build build
+
+using namespace Center;
 
 int SDL_main(int argc, char* argv[]){
     (void)argc;
     (void)argv;
 
-    Center::Engine engine;
+    Engine engine;
 
     while(engine.isRunning()){
 
