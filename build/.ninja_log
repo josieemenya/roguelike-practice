@@ -1,21 +1,10 @@
 # ninja log v6
-23	690	7703008037362424	CMakeFiles/libtcod-getting-started.dir/src/source/Engine.cpp.obj	584f72ac714d5894
-27	369	7702430993426937	C:/Users/jossi/Documents/project based learnig/StephUlC++/troll/build/cmake_install.cmake	1c22688ff59df0f4
-27	369	7702430993426937	build.ninja	1c22688ff59df0f4
-3	26	7703008293373512	C:/Users/jossi/Documents/project based learnig/StephUlC++/troll/build/CMakeFiles/cmake.verify_globs	fc6bcfb926c0ecfa
-23	567	7702570596415994	CMakeFiles/libtcod-getting-started.dir/src/main.cpp.obj	449de1b50bd18819
-690	3136	7703008044042922	bin/libtcod-getting-started.exe	5d01e8e88ad5c469
-3	27	7703008473129302	C:/Users/jossi/Documents/project based learnig/StephUlC++/troll/build/CMakeFiles/cmake.verify_globs	fc6bcfb926c0ecfa
-29	701	7703008473396158	CMakeFiles/libtcod-getting-started.dir/src/source/Engine.cpp.obj	584f72ac714d5894
-701	3084	7703008480113740	bin/libtcod-getting-started.exe	5d01e8e88ad5c469
-2	24	7703009407344245	C:/Users/jossi/Documents/project based learnig/StephUlC++/troll/build/CMakeFiles/cmake.verify_globs	fc6bcfb926c0ecfa
-27	663	7703009407586829	CMakeFiles/libtcod-getting-started.dir/src/source/Engine.cpp.obj	584f72ac714d5894
-664	3016	7703009413950874	bin/libtcod-getting-started.exe	5d01e8e88ad5c469
-2	21	7703009976671269	C:/Users/jossi/Documents/project based learnig/StephUlC++/troll/build/CMakeFiles/cmake.verify_globs	fc6bcfb926c0ecfa
-2	23	7703010726345113	C:/Users/jossi/Documents/project based learnig/StephUlC++/troll/build/CMakeFiles/cmake.verify_globs	fc6bcfb926c0ecfa
-2	24	7703010920488093	C:/Users/jossi/Documents/project based learnig/StephUlC++/troll/build/CMakeFiles/cmake.verify_globs	fc6bcfb926c0ecfa
-2	21	7703013671320150	C:/Users/jossi/Documents/project based learnig/StephUlC++/troll/build/CMakeFiles/cmake.verify_globs	fc6bcfb926c0ecfa
-3	33	7703034757518680	C:/Users/jossi/Documents/project based learnig/StephUlC++/troll/build/CMakeFiles/cmake.verify_globs	fc6bcfb926c0ecfa
-2	22	7703035009643699	C:/Users/jossi/Documents/project based learnig/StephUlC++/troll/build/CMakeFiles/cmake.verify_globs	fc6bcfb926c0ecfa
-24	701	7703035009853423	CMakeFiles/libtcod-getting-started.dir/src/source/Engine.cpp.obj	584f72ac714d5894
-701	2786	7703035016628741	bin/libtcod-getting-started.exe	5d01e8e88ad5c469
+33	3004	7703720221967065	CMakeFiles/libtcod-getting-started.dir/src/source/Engine.cpp.obj	584f72ac714d5894
+20	540	7703720598059030	C:/Users/jossi/Documents/project based learnig/StephUlC++/troll/build/cmake_install.cmake	1c22688ff59df0f4
+20	540	7703720598079079	build.ninja	1c22688ff59df0f4
+3	21	7703720595342070	C:/Users/jossi/Documents/project based learnig/StephUlC++/troll/build/CMakeFiles/cmake.verify_globs	fc6bcfb926c0ecfa
+31	2873	7703720221946482	CMakeFiles/libtcod-getting-started.dir/src/main.cpp.obj	449de1b50bd18819
+3004	5972	7703720251686507	bin/libtcod-getting-started.exe	5d01e8e88ad5c469
+21	321	7703720598079079	build.ninja	1c22688ff59df0f4
+21	321	7703720598079079	C:/Users/jossi/Documents/project based learnig/StephUlC++/troll/build/cmake_install.cmake	1c22688ff59df0f4
+14	33	7703720598674238	C:/Users/jossi/Documents/project based learnig/StephUlC++/troll/build/CMakeFiles/cmake.verify_globs	fc6bcfb926c0ecfa
