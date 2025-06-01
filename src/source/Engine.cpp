@@ -8,6 +8,7 @@
 #include "Position.h"
 #include "Characters.h"
 
+
 #include <SDL3/SDL_events.h>
 #include <SDL3/SDL_keycode.h>
 #include <SDL3/SDL_video.h>
@@ -18,12 +19,13 @@
 #include <array>
 #include <exception>
 #include <iostream>
+#include "Components.h"
 
 // auto tileset = tcod::load_tilesheet(get_data_dir() / "dejavu16x16_gs_tc.png", {32, 8}, tcod::CHARMAP_TCOD);
    // params.tileset = tileset.get();
 
 
-auto path = std::filesystem::current_path() / "test.png";
+auto path = std::filesystem::current_path() / "data" / "test.png";
 tcod::Tileset PlayerSprite;
 TCOD_Tileset* PlayerSheet;
 
@@ -38,6 +40,8 @@ constexpr std::array<int, TILE_COUNT> make_full_charmap() {
 }
 
 constexpr auto full_charmap = make_full_charmap();
+
+//auto Enemy = new Component::Entity(12, 12, full_charmap[30], TCODColor(255, 255, 255));
 
 namespace Center{
 
@@ -62,7 +66,9 @@ namespace Center{
       engine_context = tcod::Context{params};
       PlayerCharacter = new Characters::Player();
       PlayerCharacter->PlayerLocation = Location::Position{(window_width/2), (window_height/2)};
+
     }
+
 
     void Engine::input(){
 
@@ -92,13 +98,15 @@ namespace Center{
       engine_console.clear();
 
       if(std::filesystem::exists(path)) { // 16/16 pixels
-        tcod::print(engine_console, {0, 0}, "exists", std::nullopt, std::nullopt, TCOD_LEFT, TCOD_BKGND_SET);
-      } else {
+
+        engine_console.at(PlayerCharacter->PlayerLocation.x, PlayerCharacter->PlayerLocation.y).ch = full_charmap[2];
+      }
+      else {
         std::cerr << "Could not load test.bmp" << std::endl;
       }
 
       //engine_console.set_tilesheet(PlayerSprite);
-      engine_console.at(PlayerCharacter->PlayerLocation.x, PlayerCharacter->PlayerLocation.y).ch = full_charmap[2];
+
 
 
 
@@ -180,6 +188,7 @@ namespace Center{
       running = false;
       delete PlayerCharacter;
       PlayerCharacter = nullptr;
+
 
     }
 }
