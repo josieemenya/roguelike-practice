@@ -32,4 +32,4 @@ IF ERRORLEVEL 1 (
 
 
 start "" "%BUILD_DIR%\bin\libtcod-getting-started.exe"
-pause
+

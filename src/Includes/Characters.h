@@ -8,15 +8,21 @@
 #include <SDL3/SDL.h>
 #include <SDL3/SDL_main.h>
 #include "Position.h"
+#include <array>
 
 namespace Characters {
-    class Player {
+    class Player : public Component::Entity {
 
       public:
 
         Player() = default;
         ~Player() = default;
-        Location::Position PlayerLocation;
+
+        void setLocation(std::array<int,2> newLocation){
+          x = newLocation[0];
+          y = newLocation[1];
+        }
+
     };
 
 }

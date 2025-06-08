@@ -7,10 +7,18 @@
 #include "libtcod.hpp"
 #include <SDL3/SDL.h>
 #include <SDL3/SDL_main.h>
-#include <queue>
+#include <vector>
+#include <algorithm>
+#include <filesystem>
+#include <iostream>
 #include "Components.h"
+#include "Game_Map.h"
 #include <libtcod/bsp.h>
 
+
+namespace Characters{
+  class Player;
+}
 
 namespace Center {
 
@@ -25,19 +33,19 @@ namespace Center {
         void update();
         void render();
 
-        /*void draw_entity(tcod::Console e_console, Component::Entity* entity){
-          TCOD_console_set_default_background(e_console, entity->color);
-            TCOD_console_put_char(e_console, entity->x, entity->y, entity->c, TCOD_BKGND_NONE);
+        void draw_entity(tcod::Console& e_console, Component::Entity* entity){
+          if(e_console.in_bounds({entity->x, entity->y}))
+            e_console.at(entity->x, entity->y).ch = entity->character;
         }
 
-        void render_all(tcod::Console e_console, std::queue<Component::Entity*> entities, int width, int height){
+        void render_all(tcod::Console& e_console, std::vector<Component::Entity*>& entities, std::filesystem::path data_dir){
 
-            while(!entities.empty()) {
-                    Component::Entity* entity = entities.front();
-                    draw_entity(e_console, entity);
-                    entities.pop();
-                }
-        }*/
+            e_console.clear();
+            if(std::filesystem::exists(data_dir))
+              std::for_each(entities.begin(), entities.end(), [this, &e_console](Component::Entity* entity){draw_entity(e_console, entity);});
+            else
+              std::cerr << "Could not load data directory and associated files" << std::endl;
+        }
 
         bool isRunning() const;
 

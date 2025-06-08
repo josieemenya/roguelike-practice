@@ -21,11 +21,11 @@
 #include <iostream>
 #include "Components.h"
 
-// auto tileset = tcod::load_tilesheet(get_data_dir() / "dejavu16x16_gs_tc.png", {32, 8}, tcod::CHARMAP_TCOD);
-   // params.tileset = tileset.get();
+// MAP W = 80, MAP H = 50
 
 
 auto path = std::filesystem::current_path() / "data" / "test.png";
+std::vector<Component::Entity*> all_objects;
 tcod::Tileset PlayerSprite;
 TCOD_Tileset* PlayerSheet;
 
@@ -64,9 +64,11 @@ namespace Center{
       params.sdl_window_flags = SDL_WINDOW_RESIZABLE;
 
       engine_context = tcod::Context{params};
-      PlayerCharacter = new Characters::Player();
-      PlayerCharacter->PlayerLocation = Location::Position{(window_width/2), (window_height/2)};
-
+      PlayerCharacter->setLocation({(window_width/2), (window_height/2)});
+      PlayerCharacter->character = full_charmap[298];
+      
+      all_objects.push_back(PlayerCharacter);
+      
     }
 
 
@@ -93,44 +95,30 @@ namespace Center{
     }
 
     void Engine::render(){
-
-
-      engine_console.clear();
-
-      if(std::filesystem::exists(path)) { // 16/16 pixels
-
-        engine_console.at(PlayerCharacter->PlayerLocation.x, PlayerCharacter->PlayerLocation.y).ch = full_charmap[2];
-      }
-      else {
-        std::cerr << "Could not load test.bmp" << std::endl;
-      }
-
-      //engine_console.set_tilesheet(PlayerSprite);
-
-
-
-
+      
+      render_all(engine_console, all_objects, path);      
       engine_context.present(engine_console);
+
     }
 
     void Engine::update(){
-        auto new_pos = PlayerCharacter->PlayerLocation;
+        std::array<int, 2> new_pos = {PlayerCharacter->x, PlayerCharacter->y};
 
         switch(next_event) {
           case Event::MoveUp:
-            --new_pos.y;
+            --new_pos[1];
             break;
 
           case Event::MoveDown:
-            ++new_pos.y;
+            ++new_pos[1];
             break;
 
           case Event::MoveLeft:
-            --new_pos.x;
+            --new_pos[0];
             break;
 
           case Event::MoveRight:
-            ++new_pos.x;
+            ++new_pos[0];
             break;
 
           case Event::Quit:
@@ -141,9 +129,9 @@ namespace Center{
               break;
         }
 
-        if (engine_console.in_bounds({new_pos.x, new_pos.y})){
+        if (engine_console.in_bounds({new_pos[0], new_pos[1]})){
 
-           PlayerCharacter->PlayerLocation = new_pos;
+           PlayerCharacter->setLocation(new_pos);
         }
     }
 

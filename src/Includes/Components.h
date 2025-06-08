@@ -8,28 +8,29 @@
 #include "libtcod.hpp"
 #include <SDL3/SDL.h>
 #include <SDL3/SDL_main.h>
-#include "Characters.h"
+#include "Position.h"
 #include <libtcod/bsp.h>
 
 namespace Component{
-    class Entity{
+
+    class Entity : public Location::Position {
       public:
-      int x,y;
-      char c;
+      
+      int character;
       TCOD_color_t color;
 
       Entity() = default;
       ~Entity() = default;
 
       // copy
-      Entity(Entity& self, int x, int y, char c, TCOD_color_t color){
+      Entity(Entity& self, int x, int y, int character, TCOD_color_t color){
         self.x = x;
         self.y = y;
-        self.c = c;
+        self.character = character;
         self.color = color;
       }
 
-      Entity(int x, int y, char c, TCOD_color_t color) : x(x), y(y), c(c), color(color){
+      Entity(int x, int y, int c, TCOD_color_t color) : Location::Position(x, y), character(c), color(color){
 
       }
 
