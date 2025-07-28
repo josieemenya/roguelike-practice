@@ -1,0 +1,14 @@
+[
+{
+  "directory": "C:/Users/jossi/Documents/project based learnig/StephUlC++/troll/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DLIBTCOD_STATIC -DTCOD_NO_THREADS @CMakeFiles/libtcod-getting-started.dir/includes_CXX.rsp -g -Wall -Wextra -o CMakeFiles\\libtcod-getting-started.dir\\src\\main.cpp.obj -c \"C:\\Users\\jossi\\Documents\\project based learnig\\StephUlC++\\troll\\src\\main.cpp\"",
+  "file": "C:/Users/jossi/Documents/project based learnig/StephUlC++/troll/src/main.cpp",
+  "output": "CMakeFiles/libtcod-getting-started.dir/src/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/jossi/Documents/project based learnig/StephUlC++/troll/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DLIBTCOD_STATIC -DTCOD_NO_THREADS @CMakeFiles/libtcod-getting-started.dir/includes_CXX.rsp -g -Wall -Wextra -o CMakeFiles\\libtcod-getting-started.dir\\src\\source\\Engine.cpp.obj -c \"C:\\Users\\jossi\\Documents\\project based learnig\\StephUlC++\\troll\\src\\source\\Engine.cpp\"",
+  "file": "C:/Users/jossi/Documents/project based learnig/StephUlC++/troll/src/source/Engine.cpp",
+  "output": "CMakeFiles/libtcod-getting-started.dir/src/source/Engine.cpp.obj"
+}
+]

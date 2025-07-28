@@ -76,30 +76,30 @@ CMakeFiles/libtcod-getting-started.dir/src/main.cpp.obj: CMakeFiles/libtcod-gett
 CMakeFiles/libtcod-getting-started.dir/src/main.cpp.obj: C:/Users/jossi/Documents/project\ based\ learnig/StephUlC++/troll/src/main.cpp
 CMakeFiles/libtcod-getting-started.dir/src/main.cpp.obj: CMakeFiles/libtcod-getting-started.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\jossi\Documents\project based learnig\StephUlC++\troll\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/libtcod-getting-started.dir/src/main.cpp.obj"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/libtcod-getting-started.dir/src/main.cpp.obj -MF CMakeFiles\libtcod-getting-started.dir\src\main.cpp.obj.d -o CMakeFiles\libtcod-getting-started.dir\src\main.cpp.obj -c "C:\Users\jossi\Documents\project based learnig\StephUlC++\troll\src\main.cpp"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/libtcod-getting-started.dir/src/main.cpp.obj -MF CMakeFiles\libtcod-getting-started.dir\src\main.cpp.obj.d -o CMakeFiles\libtcod-getting-started.dir\src\main.cpp.obj -c "C:\Users\jossi\Documents\project based learnig\StephUlC++\troll\src\main.cpp"
 
 CMakeFiles/libtcod-getting-started.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/libtcod-getting-started.dir/src/main.cpp.i"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\jossi\Documents\project based learnig\StephUlC++\troll\src\main.cpp" > CMakeFiles\libtcod-getting-started.dir\src\main.cpp.i
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\jossi\Documents\project based learnig\StephUlC++\troll\src\main.cpp" > CMakeFiles\libtcod-getting-started.dir\src\main.cpp.i
 
 CMakeFiles/libtcod-getting-started.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/libtcod-getting-started.dir/src/main.cpp.s"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\jossi\Documents\project based learnig\StephUlC++\troll\src\main.cpp" -o CMakeFiles\libtcod-getting-started.dir\src\main.cpp.s
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\jossi\Documents\project based learnig\StephUlC++\troll\src\main.cpp" -o CMakeFiles\libtcod-getting-started.dir\src\main.cpp.s
 
 CMakeFiles/libtcod-getting-started.dir/src/source/Engine.cpp.obj: CMakeFiles/libtcod-getting-started.dir/flags.make
 CMakeFiles/libtcod-getting-started.dir/src/source/Engine.cpp.obj: CMakeFiles/libtcod-getting-started.dir/includes_CXX.rsp
 CMakeFiles/libtcod-getting-started.dir/src/source/Engine.cpp.obj: C:/Users/jossi/Documents/project\ based\ learnig/StephUlC++/troll/src/source/Engine.cpp
 CMakeFiles/libtcod-getting-started.dir/src/source/Engine.cpp.obj: CMakeFiles/libtcod-getting-started.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\jossi\Documents\project based learnig\StephUlC++\troll\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/libtcod-getting-started.dir/src/source/Engine.cpp.obj"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/libtcod-getting-started.dir/src/source/Engine.cpp.obj -MF CMakeFiles\libtcod-getting-started.dir\src\source\Engine.cpp.obj.d -o CMakeFiles\libtcod-getting-started.dir\src\source\Engine.cpp.obj -c "C:\Users\jossi\Documents\project based learnig\StephUlC++\troll\src\source\Engine.cpp"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/libtcod-getting-started.dir/src/source/Engine.cpp.obj -MF CMakeFiles\libtcod-getting-started.dir\src\source\Engine.cpp.obj.d -o CMakeFiles\libtcod-getting-started.dir\src\source\Engine.cpp.obj -c "C:\Users\jossi\Documents\project based learnig\StephUlC++\troll\src\source\Engine.cpp"
 
 CMakeFiles/libtcod-getting-started.dir/src/source/Engine.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/libtcod-getting-started.dir/src/source/Engine.cpp.i"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\jossi\Documents\project based learnig\StephUlC++\troll\src\source\Engine.cpp" > CMakeFiles\libtcod-getting-started.dir\src\source\Engine.cpp.i
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\jossi\Documents\project based learnig\StephUlC++\troll\src\source\Engine.cpp" > CMakeFiles\libtcod-getting-started.dir\src\source\Engine.cpp.i
 
 CMakeFiles/libtcod-getting-started.dir/src/source/Engine.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/libtcod-getting-started.dir/src/source/Engine.cpp.s"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\jossi\Documents\project based learnig\StephUlC++\troll\src\source\Engine.cpp" -o CMakeFiles\libtcod-getting-started.dir\src\source\Engine.cpp.s
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\jossi\Documents\project based learnig\StephUlC++\troll\src\source\Engine.cpp" -o CMakeFiles\libtcod-getting-started.dir\src\source\Engine.cpp.s
 
 # Object files for target libtcod-getting-started
 libtcod__getting__started_OBJECTS = \
@@ -112,18 +112,18 @@ libtcod__getting__started_EXTERNAL_OBJECTS =
 bin/libtcod-getting-started.exe: CMakeFiles/libtcod-getting-started.dir/src/main.cpp.obj
 bin/libtcod-getting-started.exe: CMakeFiles/libtcod-getting-started.dir/src/source/Engine.cpp.obj
 bin/libtcod-getting-started.exe: CMakeFiles/libtcod-getting-started.dir/build.make
-bin/libtcod-getting-started.exe: C:/vcpkg/installed/x64-mingw-static/lib/libSDL3.a
-bin/libtcod-getting-started.exe: C:/vcpkg/installed/x64-mingw-static/lib/libtcod.a
-bin/libtcod-getting-started.exe: C:/vcpkg/installed/x64-mingw-static/lib/libSDL3.a
-bin/libtcod-getting-started.exe: C:/vcpkg/installed/x64-mingw-static/lib/libzlib.a
-bin/libtcod-getting-started.exe: C:/vcpkg/installed/x64-mingw-static/lib/liblodepng-c.a
-bin/libtcod-getting-started.exe: C:/vcpkg/installed/x64-mingw-static/lib/libutf8proc.a
+bin/libtcod-getting-started.exe: C:/vcpkg/installed/x64-mingw-static/debug/lib/libSDL3.a
+bin/libtcod-getting-started.exe: C:/vcpkg/installed/x64-mingw-static/debug/lib/libtcod.a
+bin/libtcod-getting-started.exe: C:/vcpkg/installed/x64-mingw-static/debug/lib/libSDL3.a
+bin/libtcod-getting-started.exe: C:/vcpkg/installed/x64-mingw-static/debug/lib/libzlibd.a
+bin/libtcod-getting-started.exe: C:/vcpkg/installed/x64-mingw-static/debug/lib/liblodepng-c.a
+bin/libtcod-getting-started.exe: C:/vcpkg/installed/x64-mingw-static/debug/lib/libutf8proc.a
 bin/libtcod-getting-started.exe: CMakeFiles/libtcod-getting-started.dir/linkLibs.rsp
 bin/libtcod-getting-started.exe: CMakeFiles/libtcod-getting-started.dir/objects1.rsp
 bin/libtcod-getting-started.exe: CMakeFiles/libtcod-getting-started.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\jossi\Documents\project based learnig\StephUlC++\troll\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable bin\libtcod-getting-started.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\libtcod-getting-started.dir\link.txt --verbose=$(VERBOSE)
-	C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary "C:/Users/jossi/Documents/project based learnig/StephUlC++/troll/build/bin/libtcod-getting-started.exe" -installedDir C:/vcpkg/installed/x64-mingw-static/bin -OutVariable out
+	C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary "C:/Users/jossi/Documents/project based learnig/StephUlC++/troll/build/bin/libtcod-getting-started.exe" -installedDir C:/vcpkg/installed/x64-mingw-static/debug/bin -OutVariable out
 
 # Rule to build all files generated by this target.
 CMakeFiles/libtcod-getting-started.dir/build: bin/libtcod-getting-started.exe
